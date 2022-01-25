@@ -19,3 +19,5 @@ Therefore, an HDR image is encoded in a format that allows the largest range of 
 HDR stands for High Dynamic Range and refers to the contrast or color range between the lightest and darkest tones in an image.
 - Wider color gamut and contrast range than Standard Dynamic Range (SDR).
 - Bright tones are made brighter without overexposing. Dark tones are made darker without underexposing.
+
+![image](https://user-images.githubusercontent.com/48233453/151076488-e4f08532-07ec-46da-a8ac-00ad8ea2a7e8.png)
