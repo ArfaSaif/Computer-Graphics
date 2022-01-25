@@ -16,4 +16,6 @@ base layer HDR image - more contrast between bright and dark spots is and HDR ph
 
 ![image](https://user-images.githubusercontent.com/48233453/151075573-bc1bd445-6516-494f-8d2d-7580b3c677b6.png)
 Therefore, an HDR image is encoded in a format that allows the largest range of values, e.g. floating-point values stored with 32 bits per color channel.
-HDR stands for High Dynamic Range and refers to the contrast or color range between the lightest and darkest tones in an image
+HDR stands for High Dynamic Range and refers to the contrast or color range between the lightest and darkest tones in an image.
+- Wider color gamut and contrast range than Standard Dynamic Range (SDR).
+- Bright tones are made brighter without overexposing. Dark tones are made darker without underexposing.
