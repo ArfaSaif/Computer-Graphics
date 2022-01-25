@@ -15,3 +15,4 @@ The HDR result needs to be reproduced on a lower dynamic range display for viewi
 base layer HDR image - more contrast between bright and dark spots is and HDR photo - to experience the etire range of light that is experienced by the human eye more than so you could ever capture in a single exposure with your camera.
 
 ![image](https://user-images.githubusercontent.com/48233453/151075573-bc1bd445-6516-494f-8d2d-7580b3c677b6.png)
+Therefore, an HDR image is encoded in a format that allows the largest range of values, e.g. floating-point values stored with 32 bits per color channel.
