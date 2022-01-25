@@ -1,7 +1,7 @@
 # Computer-Graphics
 
 
-#Tonemapping
+# Tonemapping
 
 **Exposure** - the amount of light that is captured, depends on the scene luminance, if a scene is brigheter, then more light will reach the camera film/sensor, increasing exposure.
 
