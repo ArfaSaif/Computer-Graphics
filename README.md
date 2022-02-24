@@ -21,3 +21,7 @@ HDR stands for High Dynamic Range and refers to the contrast or color range betw
 - Bright tones are made brighter without overexposing. Dark tones are made darker without underexposing.
 
 ![image](https://user-images.githubusercontent.com/48233453/151076488-e4f08532-07ec-46da-a8ac-00ad8ea2a7e8.png)
+
+
+
+## https://graphics.cs.utah.edu/courses/cs4600/fall2021/
