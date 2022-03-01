@@ -25,3 +25,15 @@ HDR stands for High Dynamic Range and refers to the contrast or color range betw
 
 
 ## https://graphics.cs.utah.edu/courses/cs4600/fall2021/
+
+
+# Voxel
+A voxel is a unit of graphic information that defines a point in three-dimensional space. Since a pixel (picture element) defines a point in two dimensional space with its X and Y coordinates , a third z coordinate is needed. In 3-D space, each of the coordinates is defined in terms of its position, color, and density.
+
+The difference between a pixel and a voxel is that a pixel is a square inside of a 2D image with a position in a 2D grid and a single color value, whereas a voxel is a cube inside of a 3D model that contains a position inside a 3D grid and a single color value.
+
+![image](https://user-images.githubusercontent.com/48233453/156168348-b0f52e71-7225-44d7-9a4a-a50fc84c109b.png)
+
+
+
+
