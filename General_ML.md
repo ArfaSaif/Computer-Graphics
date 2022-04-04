@@ -6,6 +6,7 @@
 
 ** Memory Consumption **
 - Memory in neural networks is required to store input data, weight parameters and activations as an input propagates through the network. In training, activations from a forward pass must be retained until they can be used to calculate the error gradients in the backwards pass. As an example, the 50-layer ResNet network has ~26 million weight parameters and computes ~16 million activations in the forward pass. If you use a 32-bit floating-point value to store each weight and activation this would give a total storage requirement of 168 MB. By using a lower precision value to store these weights and activations we could halve or even quarter this storage requirement.
+- we need to store all intermediate activations during training because they are needed to compute gradients during back-propagation:
 - A greater memory challenge arises from GPUs' reliance on data being laid out as dense vectors so they can fill very wide single instruction multiple data (SIMD) compute engines, which they use to achieve high compute density. CPUs use similar wide vector units to deliver high-performance arithmetic. In GPUs the vector paths are typically 1024 bits wide, so GPUs using 32-bit floating-point data typically parallelise the training data up into a mini-batch of 32 samples, to create 1024-bit-wide data vectors. This mini-batch approach to synthesizing vector parallelism multiplies the number of activations by a factor of 32, growing the local storage requirement to over 2 GB.
 - https://www.graphcore.ai/posts/why-is-so-much-memory-needed-for-deep-neural-networks#:~:text=Memory%20in%20neural%20networks%20is,gradients%20in%20the%20backwards%20pass.
 
@@ -16,6 +17,11 @@
 Sharded removes these redundancies. It works the same way as DDP except that all the overhead (gradients, optimizer state, etc) are calculated only for a portion of the full parameters and thus we remove the redundancy of storing the same gradient and optimizer states on all GPUs.
 - So, each GPU stores only a subset of activations, optimizer parameters and gradient computations.
 
+
+https://machinelearningmastery.com/introduction-to-1x1-convolutions-to-reduce-the-complexity-of-convolutional-neural-networks/ 
+** h5 file **
+- An H5 file is a data file saved in the Hierarchical Data Format (HDF). It contains multidimensional arrays of scientific data. Contains metadata within the file
+- Contains groups
 
 
 
