@@ -48,6 +48,9 @@ the mean attention distance so the the  distance increases and from like the mid
 
 the additional benefit you get in the transformers is of course that at the very beginning you can already pay attention to things that are very far away you cannot do that with convolutional networks or when you use local attention
 
+lstms introduced transforms - now replaces lstms, and now replacing convoutions
 
-
+21:57
+an mlp a feed forward network like we looked at here the the the notion should be that it could technically learn any function right a feedforward network can technically learn any function but it's it's kind of unstable and so on you know if you shift by a pixel all the inputs are all weird and so on so a 
+convolutional neural network for images seemed pretty good because it has a good inductive prior and the good inductive prior is this is that probably what a one pixel cares about is its immediate neighborhood and then what that neighborhood as a whole cares about is its immediate neighborhood right so that's sort of how we look at images like you integrate
 
