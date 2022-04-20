@@ -27,6 +27,9 @@ HDR stands for High Dynamic Range and refers to the contrast or color range betw
 ## https://graphics.cs.utah.edu/courses/cs4600/fall2021/
 
 
+
+
+
 # Voxel
 A voxel is a unit of graphic information that defines a point in three-dimensional space. Since a pixel (picture element) defines a point in two dimensional space with its X and Y coordinates , a third z coordinate is needed. In 3-D space, each of the coordinates is defined in terms of its position, color, and density.
 
@@ -35,5 +38,14 @@ The difference between a pixel and a voxel is that a pixel is a square inside of
 ![image](https://user-images.githubusercontent.com/48233453/156168348-b0f52e71-7225-44d7-9a4a-a50fc84c109b.png)
 
 
+## Data Storage Format
+1) Store in hard disk directly in the format of images / video frames.
+2) Make LMDB, which could accelerate the IO and decompression speed during training.
+3) memcached is also supported, if they are installed (usually on clusters).
 
+##### LMDB Description
+- During training, we use LMDB to **speed up the IO and CPU decompression. **(During testing, usually the data is limited and it is generally not necessary to use LMDB). The acceleration depends on the configurations of the machine, and the following factors will affect the speed:
+- **Some machines will clean cache regularly, and LMDB depends on the cache mechanism**. Therefore, if the data fails to be cached, you need to check it. After the command free -h, the cache occupied by LMDB will be recorded under the buff/cache entry.
+- Whether the memory of the machine **is large enough to put the whole LMDB data in**. If not, it will affect the speed due to the need to constantly update the cache.
+If you cache the LMDB dataset for the first time, it may affect the training speed. So before training, you can enter the LMDB dataset directory and cache the data by: cat data.mdb > /dev/nul.
 
