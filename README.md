@@ -49,3 +49,5 @@ The difference between a pixel and a voxel is that a pixel is a square inside of
 - Whether the memory of the machine **is large enough to put the whole LMDB data in**. If not, it will affect the speed due to the need to constantly update the cache.
 If you cache the LMDB dataset for the first time, it may affect the training speed. So before training, you can enter the LMDB dataset directory and cache the data by: cat data.mdb > /dev/nul.
 
+# Residuals
+![image](https://user-images.githubusercontent.com/48233453/176226975-aeaf0993-797c-4c6a-a6f3-a292c5232aa6.png)
