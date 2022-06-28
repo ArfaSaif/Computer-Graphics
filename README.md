@@ -54,3 +54,6 @@ If you cache the LMDB dataset for the first time, it may affect the training spe
 
 # Pixel Shuffle
 ![image](https://user-images.githubusercontent.com/48233453/176227137-8f7b3a95-1111-47b7-8aef-6c577ce8ac4d.png)
+
+# Back Propogatoin through time
+![image](https://user-images.githubusercontent.com/48233453/176227773-3bcf6fc4-1ed9-4742-ba5b-1491fdcf2513.png)
